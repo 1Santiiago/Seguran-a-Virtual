@@ -1,0 +1,53 @@
+<!-- Projeo - Segurançã Virtual -->
+<!-- Requisistos -->
+<!-- 1° Pegar o nome da pessoa que esta tentando entrar naquele lugar -->
+<!-- Verificar quem a convidou -->
+<!-- Criar um botao na tela que quando acionado, irá acessar o js para verificar se a pessoa que esta tentadno entrar foi de fato convidado pela outra -->
+<!-- -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/projeto1.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="all">
+    <section class="FestaVip">
+        <div class="nomeFesta">
+            <h1>Festa Vip</h1>
+            <div class="paragrafo">
+                <p>Bem Vindo a Festa Senhor(a):</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="receberNome center">
+        <div class="formu">
+            <label for="nomeUser">Seu nome, Por favor</label>
+            <input type="text" id="nomeUser" placeholder="Digite seu Nome">
+        </div>
+    </section>
+
+    <section class="quemConvidou center">
+        <div class="nomeQueChamou">
+            <h1>Quem o convidou para essa festa?</h1>
+        </div>
+        <div class="formu center">
+            <label for="nomeUser">Nome, Por favor</label>
+            <input type="text" id="nomeUser" placeholder="Digite seu Nome">
+            <button onclick="verificarEntrada()">Verificar</button>
+        </div>
+    </section>
+
+    <section class="Permitido">
+        <h1>Permitido Entrar?</h1>
+            <p id="permi">Pesquisando....</p>
+    </section>
+</section><!--all-->
+</body>
+</html>
